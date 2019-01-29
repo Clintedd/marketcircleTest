@@ -18,8 +18,13 @@ a {
 
 img {
 	max-width: 100%;
-	height: auto;
 	display: block;
+}
+
+.button {
+  background: $green;
+	color: $white;
+  border-radius: 8px;
 }
 
 .wrapper {

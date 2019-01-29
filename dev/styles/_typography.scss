@@ -7,6 +7,11 @@ h2, p {
   color: $font;
 }
 
+h1 {
+  font-size: 2.8em;
+  color: $white;
+}
+
 h2 {
   font-size: 1.7em;
   font-weight: 600;
@@ -15,4 +20,17 @@ h2 {
 p {
   font-size: 0.9em;
   line-height: 1.6;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+nav a {
+  color: $font;
+}
+
+nav a, 
+.header-button a {
+  font-size: 0.7em;
 }
