@@ -1,0 +1,44 @@
+@import 'setup';
+@import 'utils';
+@import 'typography';
+@import 'components/header';
+@import 'components/section';
+
+
+// html {
+//   font-size: 62.5%;
+// }
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.wrapper-divider {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.wrapper-divider > * {
+	flex: 1;
+}
+
+.wrapper-divider > *:first-child {
+	margin-right: 30px;
+}
+

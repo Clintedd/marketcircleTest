@@ -1,0 +1,50 @@
+.greetings {
+  margin: 100px 0;
+}
+
+.button {
+  background: $green;
+  color: $button;
+  margin: 0 auto;
+  padding: 1.25rem 1.875rem;
+}
+
+.button-container {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.two-article h2 {
+  margin-bottom: 2rem;
+}
+
+.two-img {
+  margin-top: 2rem;
+}
+
+.middle-header {
+  width: 50%;
+  margin-top: 4rem;
+}
+
+.one-article {
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.one-article p:first-child {
+  margin-bottom: 1.7rem;
+}
+
+.lrg-article {
+  margin-top: 4rem;
+}
+
+.lrg-article h2 {
+  margin-bottom: 1rem;
+}
+
+.lrg-img {
+  transform: scale(1.04);
+  margin-top: 3rem;
+}
