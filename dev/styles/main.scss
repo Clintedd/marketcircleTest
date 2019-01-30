@@ -18,6 +18,7 @@ a {
 
 img {
 	max-width: 100%;
+	height: auto;
 	display: block;
 }
 
@@ -32,11 +33,19 @@ img {
 	margin: 0 auto;
 }
 
+.inner-wrapper {
+	width: 75%;
+	margin: 0 auto;
+}
+
 
 .wrapper-divider {
 	display: flex;
 	flex-direction: row;
 
+	@media (max-width: 1050px) {
+		flex-direction: column;
+	}
 }
 
 .wrapper-divider > * {
@@ -45,5 +54,16 @@ img {
 
 .wrapper-divider > *:first-child {
 	margin-right: 30px;
+
+	@media (max-width: 1050px) {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.txt-center {
+	@media (max-width: 1050px) {
+		text-align: center;
+	}
 }
 

@@ -2,11 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  height: 10vh;
+  // transform: translateY(-10%);
 }
 
 .logo-img {
   transform: translateY(79%);
   z-index: 10;
+  min-width: 140px;
 }
 
 .header-wrapper > * {
@@ -28,7 +31,7 @@ nav a {
 }
 
 nav li:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .top {
@@ -52,6 +55,10 @@ nav li:not(:last-child) {
   top: 60%;
   right: 50%;
   transform: translateX(50%);
+
+  @media (max-width: 1050px) {
+    top: 40%;
+  }
 }
 
 

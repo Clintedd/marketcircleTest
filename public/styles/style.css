@@ -134,8 +134,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: calc(1em + 1vw); }
 
-h2, p {
-  margin: 0;
+body {
+  font-family: "Arimo", sans-serif; }
+
+h2, h3, h4, p {
+  margin: 0; }
+
+h2, h3, p {
   color: #333; }
 
 h1 {
@@ -146,12 +151,27 @@ h2 {
   font-size: 1.7em;
   font-weight: 600; }
 
+h4 {
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  color: #6AAB49; }
+
 p {
   font-size: 0.9em;
   line-height: 1.6; }
 
+.carousel-cell p {
+  font-size: 0.5em;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: #A9A9A9; }
+
 a {
   font-size: 1.2em; }
+
+.see-all a {
+  color: #4A90E2;
+  font-size: 1em; }
 
 nav a {
   color: #333; }
@@ -169,12 +189,14 @@ nav a,
           justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  height: 10vh; }
 
 .logo-img {
   -webkit-transform: translateY(79%);
           transform: translateY(79%);
-  z-index: 10; }
+  z-index: 10;
+  min-width: 140px; }
 
 .header-wrapper > * {
   -webkit-box-flex: 1;
@@ -197,7 +219,7 @@ nav a {
   padding: 0.3rem; }
 
 nav li:not(:last-child) {
-  margin-right: 2rem; }
+  margin-right: 1rem; }
 
 .top {
   padding: 0.15rem 1.2rem; }
@@ -222,6 +244,9 @@ nav li:not(:last-child) {
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%); }
+  @media (max-width: 1050px) {
+    .header-img h1 {
+      top: 40%; } }
 
 .greetings {
   margin: 100px 0; }
@@ -240,6 +265,9 @@ nav li:not(:last-child) {
 
 .two-article h2 {
   margin-bottom: 2rem; }
+  @media (max-width: 1050px) {
+    .two-article h2 {
+      margin-top: 2rem; } }
 
 .two-img {
   margin-top: 2rem; }
@@ -247,6 +275,9 @@ nav li:not(:last-child) {
 .middle-header {
   width: 50%;
   margin-top: 4rem; }
+  @media (max-width: 1050px) {
+    .middle-header {
+      width: 100%; } }
 
 .one-article {
   margin-top: 1rem;
@@ -284,10 +315,65 @@ nav li:not(:last-child) {
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin: 3rem 0; }
+  @media (max-width: 1320px) {
+    .button-divider {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
-.bottom-top {
+.button-divider h2 {
+  width: 100%; }
+
+.bottom {
   padding: .6rem 1.3rem; }
+
+@media (max-width: 1320px) {
+  .bottom-button {
+    margin: 2rem 0; } }
+
+.border-div {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #F7BC5A; }
+
+.carousel-cell {
+  padding: 0 .4rem;
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 15px 2px #ccc;
+          box-shadow: 0 0 15px 2px #ccc;
+  margin: 0.5rem; }
+  @media (max-width: 1320px) {
+    .carousel-cell {
+      width: 45%; } }
+  @media (max-width: 800px) {
+    .carousel-cell {
+      width: 95%; } }
+
+.customer-img {
+  padding: .2rem; }
+
+.carousel-cell p:nth-of-type(1) {
+  height: 150px;
+  margin-top: 1rem; }
+  @media (max-width: 1050px) {
+    .carousel-cell p:nth-of-type(1) {
+      height: 100px; } }
+  @media (max-width: 800px) {
+    .carousel-cell p:nth-of-type(1) {
+      height: 70px; } }
+
+.carousel-cell p:nth-of-type(2) {
+  text-align: end;
+  margin-bottom: .5rem; }
+
+.see-all {
+  text-align: center;
+  margin: 2.5em 0; }
 
 li {
   list-style: none; }
@@ -297,6 +383,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block; }
 
 .button {
@@ -308,6 +395,10 @@ img {
   width: 80%;
   margin: 0 auto; }
 
+.inner-wrapper {
+  width: 75%;
+  margin: 0 auto; }
+
 .wrapper-divider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,6 +407,12 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  @media (max-width: 1050px) {
+    .wrapper-divider {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .wrapper-divider > * {
   -webkit-box-flex: 1;
@@ -324,3 +421,11 @@ img {
 
 .wrapper-divider > *:first-child {
   margin-right: 30px; }
+  @media (max-width: 1050px) {
+    .wrapper-divider > *:first-child {
+      margin-right: 0;
+      margin-bottom: 30px; } }
+
+@media (max-width: 1050px) {
+  .txt-center {
+    text-align: center; } }
