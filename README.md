@@ -1,3 +1,8 @@
 # gulp-boilerplate
-Delete packagelock and node modules
-npm i
+To install and use, 
+
+$ git clone url()
+$ npm install 
+$ gulp
+
+enjoy!
