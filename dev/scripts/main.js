@@ -87,6 +87,5 @@ app.init = function () {
 };
 
 $(function () {
-  AOS.init();
   app.init();
 })
