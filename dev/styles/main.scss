@@ -1,13 +1,15 @@
 @import 'setup';
 @import 'utils';
 @import 'typography';
-@import 'components/header';
 @import 'components/section';
+@import 'components/header';
 
 
-// html {
-//   font-size: 62.5%;
-// }
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 li {
 	list-style: none;
 }
@@ -25,17 +27,27 @@ img {
 .button {
   background: $green;
 	color: $white;
-  border-radius: 8px;
+	border-radius: 8px;
+	white-space: nowrap;
 }
 
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
+
+	@media (max-width: 1000px) {
+		width: 95%;
+	}
+	
 }
 
 .inner-wrapper {
 	width: 75%;
 	margin: 0 auto;
+	
+	@media (max-width: 1000px) {
+		width: 100%;
+	}
 }
 
 
@@ -43,7 +55,7 @@ img {
 	display: flex;
 	flex-direction: row;
 
-	@media (max-width: 1050px) {
+	@media (max-width: 1000px) {
 		flex-direction: column;
 	}
 }
@@ -55,14 +67,14 @@ img {
 .wrapper-divider > *:first-child {
 	margin-right: 30px;
 
-	@media (max-width: 1050px) {
+	@media (max-width: 1000px) {
 		margin-right: 0;
 		margin-bottom: 30px;
 	}
 }
 
 .txt-center {
-	@media (max-width: 1050px) {
+	@media (max-width: 1000px) {
 		text-align: center;
 	}
 }

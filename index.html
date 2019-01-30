@@ -6,39 +6,67 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Marketcircle</title>
 	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="public/styles/hover-min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
 
 	<!-- HEADER STARTS -->
 	<header>
+		<nav class="responsive-nav">
+			<ul>
+				<li>
+					<a class="nav-li hvr-bob" href="#greetings">Features</a>
+				</li>
+				<li>
+					<a class="nav-li hvr-bob" href="#two-article">Customers</a>
+				</li>
+				<li>
+					<a class="nav-li hvr-bob" href="#one-article">Pricing</a>
+				</li>
+				<li>
+					<a class="nav-li hvr-bob" href="#lrg-article">Resources</a>
+				</li>
+			</ul>
+		</nav>
 		<div class="wrapper header-wrapper">
 			<div class="logo-img">
-				<img src="assets/2x/Lorem Ipsum@2x.png" alt="">
+				<img src="assets/2x/Lorem Ipsum@2x.png"
+					   srcset="assets/1x/Lorem Ipsum.png 500w, 
+									   assets/2x/Lorem Ipsum@2x.png 1000w" 
+					   alt="logo image of the tech test and is written, lorem ipsum">
 			</div>
-			<nav>
+			<nav class="main-nav">
 				<ul>
 					<li>
-						<a href="">Features</a>
+						<a class="hvr-grow-rotate" href="#greetings">Features</a>
 					</li>
 					<li>
-						<a href="">Customers</a>
+						<a class="hvr-grow-rotate" href="#two-article">Customers</a>
 					</li>
 					<li>
-						<a href="">Pricing</a>
+						<a class="hvr-grow-rotate" href="#one-article">Pricing</a>
 					</li>
 					<li>
-						<a href="">Resources</a>
+						<a class="hvr-grow-rotate" href="#lrg-article">Resources</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="button-container header-button">
-				<a class="button top" href="">Sign Up</a>
+				<a class="button top hvr-forward" href="">Sign Up</a>
+			</div>
+			<div class="hamburger-menu">
+				<div class="hamburger">
+				</div>
 			</div>
 		</div>
 		<div class="header-img">
-			<img src="assets/2x/Banner@2x.png" alt="">
+			<img src="assets/2x/Banner@2x.png"
+					 srcset="assets/1x/Banner.png 500w, 
+									 assets/2x/Banner@2x.png 1000w" 
+					 alt="vertically half is a forest and the other half is water. Banner of this website">
 			<h1>Lorem Ipsum</h1>
 		</div>
 	</header><!-- HEADER ENDS -->
@@ -48,22 +76,25 @@
 		<div class="wrapper">
 
 			<!-- GREETINGS SECTION STARTS -->
-			<section class="greetings wrapper-divider">
+			<section id="greetings" class="greetings wrapper-divider">
 				<h2 class="txt-center">Lorem ipsum dolor, sit ame consectetur adipisicing elit quia</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores harum corporis incidunt quia obcaecati deserunt veniam reiciendis dicta nostrum.</p>
 			</section><!-- GREETINGS SECTION ENDS -->
 
 			<div class="button-container middle-button">
-				<a class="button mid" href="">Start 30 Days Trial</a>
+				<a class="button mid hvr-wobble-vertical" href="">Start 30 Days Trial</a>
 			</div>
 			
 			<!-- TWO-ARTICLE SECTION STARTS -->
-			<section class="two-article wrapper-divider">
+			<section id="two-article" class="two-article wrapper-divider">
 				<article>
 					<h2 class="txt-center">Sint occaecat cupidatat</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam vel deleniti deserunt nobis asperiores, at voluptas eveniet dolore modi culpa ab dicta natus, suscipit dolorem, laboriosam sint vitae! Repellendus expedita, ab nobis voluptas culpa itaque error aliquid tempore obcaecati incidunt.</p>
 					<div class="two-img">
-						<img src="assets/2x/02 image@2x.png" alt="">
+						<img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="50" src="assets/2x/02 image@2x.png"
+						srcset="assets/1x/02 image.png 500w,
+										assets/2x/02 image@2x.png 1000w" 
+						alt="picture of a flower, teal colored background">
 					</div>
 				</article>
 				<article>
@@ -72,7 +103,10 @@
 					dolore modi culpa ab dicta natus, suscipit dolorem, laboriosam sint vitae! Repellendus expedita, ab nobis voluptas culpa
 					itaque error aliquid tempore obcaecati incidunt.</p>
 					<div class="two-img">
-						<img src="assets/2x/karl-s-1232988-unsplash.jpg" alt="">
+						<img data-aos="fade-left" data-aos-duration="1500" data-aos-delay="50" src="assets/2x/02 image@2x.png" 
+						srcset="assets/1x/02 image.png 500w, 
+										assets/2x/02 image@2x.png 1000w" 
+						alt="picture of a flower, teal colored background">
 					</div>
 				</article>
 			</section><!-- TWO-ARTICLE SECTION ENDS -->		
@@ -80,24 +114,30 @@
 			<h2 class="middle-header txt-center">Excepteur sint occaecat cupidatat dem</h2>
 
 			<!-- ONE-ARTICLE SECTION STARTS -->
-			<section class="one-article wrapper-divider">
+			<section id="one-article" class="one-article wrapper-divider">
 				<article>
 					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non nihil enim, iure architecto ex doloremque. Explicabo modi voluptates expedita sapiente sed dolore dolores laudantium reprehenderit omnis blanditiis corporis</p>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora vero facere, voluptatem doloremque ad corporis</p>
 				</article>
 				<div class="one-img">
-					<img src="assets/2x/03 image@2x.png" alt="">
+					<img data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50"							src="assets/2x/03 image@2x.png"
+						srcset="assets/1x/03 image.png 500w,
+										assets/2x/03 image@2x.png 1000w" 
+						alt="picture of a city close to a bay at night with a lot of lights from its houses">
 				</div>
 			</section><!-- ONE-ARTICLE SECTION ENDS -->
 
 			<!-- LRG-ARTICLE SECTION STARTS -->
-			<section class="lrg-article">
+			<section id="lrg-article" class="lrg-article">
 				<article>
 					<h2 class="txt-center">Occaecat non proident</h2>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veritatis error laudantium tempore. Debitis animi nostrum ipsa quam maxime aperiam ea itaque a in ab, explicabo vel alias! Quaerat, aliquid sapiente sed.</p>
 				</article>
 				<div class="lrg-img">
-					<img src="assets/2x/04 image@2x.png" alt="">
+					<img data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50" src="assets/2x/04 image@2x.png"
+					srcset="assets/1x/04 image.png 500w,
+									assets/2x/04 image@2x.png 1000w" 
+					alt="landscape picture of mountains and a lake">
 				</div>
 			</section><!-- LRG-ARTICLE SECTION ENDS -->
 
@@ -105,7 +145,7 @@
 			<section class="story-article">
 				<div class="button-divider">
 					<div class="button-container bottom-button">
-						<a class="button bottom" href="">Lorem Ipsum</a>
+						<a class="button bottom hvr-wobble-vertical" href="">Lorem Ipsum</a>
 					</div>
 					<h2>Excepteur denet al asumen der alumin et</h2>
 				</div>
@@ -118,7 +158,10 @@
 					<div class="flickity-container">
 						<div class="carousel-cell">
 							<div class="customer-img">
-								<img src="assets/2x/S02@2x.png" alt="">
+								<img src="assets/2x/S02@2x.png"
+										 srcset="assets/1x/S02.png 200w, 
+														 assets/2x/S02@2x.png 400w" 
+										 alt="blue background">
 							</div>
 							<h4>Dolore magnam</h4>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam nemo tempore odio amet labore ut provident quam, dolore optio impedit, quae necessitatibus laboriosam possimus.</p>
@@ -126,7 +169,10 @@
 						</div>
 						<div class="carousel-cell">
 							<div class="customer-img">
-								<img src="assets/2x/S03@2x.png" alt="">
+								<img src="assets/2x/S03@2x.png"
+										 srcset="assets/1x/S03.png 200w, 
+														 assets/2x/S03@2x.png 400w" 
+										 alt="mountains and lake">
 							</div>
 							<h4>Nulla aliquet</h4>
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus odio dolores voluptatibus earum magnam, veritatis ea sit maxime eos laborum laboriosam molestiae.</p>
@@ -134,7 +180,10 @@
 						</div>
 						<div class="carousel-cell">
 							<div class="customer-img">
-								<img src="assets/2x/S01@2x.png" alt="">
+								<img src="assets/2x/S01@2x.png"
+										 srcset="assets/1x/S01.png 200w, 
+														 assets/2x/S01@2x.png 400w" 
+										 alt="shallow sea top view">
 							</div>
 							<h4>Eiusmod tempor</h4>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam sed sequi? Harum, molestias quas. Ad, perferendis?</p>
@@ -142,7 +191,10 @@
 						</div>
 						<div class="carousel-cell">
 							<div class="customer-img">
-								<img src="assets/2x/S03@2x.png" alt="">
+								<img src="assets/2x/S03@2x.png"
+										 srcset="assets/1x/S03.png 200w, 
+														 assets/2x/S03@2x.png 400w" 
+										 alt="mountains and lake">
 							</div>
 							<h4>Eiusmod tempor</h4>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam sed sequi? Harum, molestias quas. Ad, perferendis?</p>
@@ -150,7 +202,10 @@
 						</div>
 						<div class="carousel-cell">
 							<div class="customer-img">
-								<img src="assets/2x/S02@2x.png" alt="">
+								<img src="assets/2x/S02@2x.png"
+										 srcset="assets/1x/S02.png 200w, 
+														 assets/2x/S02@2x.png 400w" 
+										 alt="blue background">
 							</div>
 							<h4>Eiusmod tempor</h4>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam sed sequi? Harum, molestias quas. Ad, perferendis?</p>
@@ -158,7 +213,10 @@
 						</div>
 						<div class="carousel-cell">
 							<div class="customer-img">
-								<img src="assets/2x/S01@2x.png" alt="">
+								<img src="assets/2x/S01@2x.png"
+										 srcset="assets/1x/S01.png 200w, 
+														 assets/2x/S01@2x.png 400w" 
+										 alt="shallow sea top view">
 							</div>
 							<h4>Dolore magnam</h4>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius unde aspernatur facilis nihil cupiditate, dolorum autem cum voluptates minima consequuntur</p>
@@ -166,7 +224,10 @@
 						</div>
 						<div class="carousel-cell">
 							<div class="customer-img">
-								<img src="assets/2x/S01@2x.png" alt="">
+								<img src="assets/2x/S01@2x.png"
+										 srcset="assets/1x/S01.png 200w, 
+														 assets/2x/S01@2x.png 400w" 
+										 alt="shallow sea top view">
 							</div>
 							<h4>Eiusmod tempor</h4>
 							<p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -175,18 +236,21 @@
 					</div>
 				</div><!-- CUSTOMER-STORIES DIV ENDS -->
 				<div class="see-all">
-					<a href="">See All</a>
+					<a class="hvr-forward" href="">See All</a>
 				</div>
 
 				<div class="button-divider">
 					<h2>Ut enim ad veniam, quis ullam suscipit laboriosam</h2>
 					<div class="button-container bottom-button">
-						<a class="button bottom" href="">Commodi consequatur?</a>
+						<a class="button bottom hvr-wobble-vertical" href="">Commodi consequatur?</a>
 					</div>
 				</div>
 			</section><!-- STORY-ARTICLE SECTION ENDS  -->
 		</div>
 	</main><!-- MAIN ENDS -->
+
+	<!-- Loading AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 	<!--Loading jQuery-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
